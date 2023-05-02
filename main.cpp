@@ -38,9 +38,9 @@ int main() {
     //Create random number based queue for the user
     queue<string> userQueue;
     srand(time(NULL));
-        for (int i = 1; i <= rand() % (100 + 1) - 1; i++) {
-            userQueue.push("User " + to_string(i));
-        }
+        for (int i = 1; i <= rand() % (100 + 1) - 1; i++) { // This looks a little strange, but when I had this written out as "rand() % 50 + 1",  
+            userQueue.push("User " + to_string(i));         // it would mostly output small, single digit numbers.
+        }                                                   // This is just a bizarre workaround I found while toying with it.
 
 
 
