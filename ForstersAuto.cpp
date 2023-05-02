@@ -27,14 +27,15 @@ void checkout(queue<string>& userQueue, double& totalOrder) {
 }
 
 // Bubble sort function to sort parts menu by alphabetical order
-void bubbleSort(string arr[], int n) {
+void bubbleSort(string menu[], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                string temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+            if (menu[j] > menu[j + 1]) {
+                string temp = menu[j];
+                menu[j] = menu[j + 1];
+                menu[j + 1] = temp;
             }
         }
     }
 }
+
